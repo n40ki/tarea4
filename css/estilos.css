@@ -1,0 +1,203 @@
+:root {
+    --color1: #04151F;
+    --color2: #183A37;
+    --color3: #EFD6AC;
+    --color4: #cc2a0e;
+    --color5: #432534;
+    --color6: white;
+    --color7: #329943;
+    --color8: #d40000;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "aside  main   main   main   main"
+    "footer footer footer footer footer";
+    grid-template-columns: repeat(5, 1fr);
+}
+
+div.progress {
+    margin-bottom: 5px;
+    background-color: var(--color3);
+}
+
+h1 {
+    text-align: center;
+    color: var(--color6);
+    text-shadow: 2px 2px 4px black;
+}
+
+.carousel-image {
+    object-fit: contain;
+    height: 480px;
+    border-radius: 20px;
+}
+
+.carousel-item {
+    background-color: var(--color1);
+    padding: 10px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.carousel-caption p {
+    text-align: center;
+}
+
+.contenido-texto {
+    margin-top: 10px;
+}
+
+p, h2 {
+    padding: 0 5vw 5px 5vw;
+    text-align: justify;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+a.nav-link {
+    background-color: var(--color5);
+    border-right: 4px solid var(--color3);
+    font-weight: bold;
+    color: var(--color3);
+}
+
+header {
+    grid-area: header;
+    background-color: var(--color4);
+    border-bottom: 10px solid var(--color1);
+}
+
+main {
+    grid-area: main;
+    background-color: var(--color3);
+}
+
+aside {
+    grid-area: aside;
+    background-color: var(--color2);
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--color1);
+    color: var(--color6);
+}
+
+/* recetas.html*/
+.grid-layout-no-aside {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.recetario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    padding: 5px 15px;
+    justify-content: center;
+}
+
+.bg1 {
+    background-color: var(--color5);
+}
+
+.bg2 {
+    background-color: var(--color4);
+}
+
+.titulo-departamento {
+    text-shadow: 2px 2px 4px black;
+    background-color: var(--color7);
+    color: var(--color6);
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+img.card-img-top {
+    height: 280px;
+    object-fit: cover;
+}
+
+p.card-text {
+    margin: 0;
+    padding: 0;
+}
+
+a.btn.btn-primary {
+background-color: var(--color1);
+margin: 0.5rem 3rem;
+border: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+div.card-body {
+    background-color: var(--color3);
+}
+
+.card {
+    background-color: var(--color2);
+}
+
+/* tradiciones.html */
+
+.grid-layout-aside-right {
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "main   main   main   main   aside"
+    "footer footer footer footer footer";
+    grid-template-columns: repeat(5, 1fr);
+}
+
+div.accordion-item {
+    background-color: var(--color3);
+}
+
+button.accordion-button {
+    color: var(--color6);
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+}
+
+button.bg-red {
+    background-color: rgb(255, 34, 34);
+}
+
+.bg-yellow {
+    background-color: rgb(255, 255, 118);
+}
+
+.bg-green {
+    background-color: rgb(21, 194, 73);
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: var(--color1);
+}
